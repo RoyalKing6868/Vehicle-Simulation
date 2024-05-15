@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import Sidebar from './components/Sidebar'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import "./App.css"
+import Homepage from './components/Homepage'
+import { AddVehicle } from './components/AddVehicle'
+import AllScenario from './components/AllScenario'
+import AddScenario from './components/AddScenario'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <div className='mainPage'>
+        <div className='sideBar'>
+          <Sidebar/>
+        </div>
+      <div className='hero'>
+      <Routes>
+        <Route path='/' element={<Homepage/>}/>
+      </Routes>
+      <Routes>
+        <Route path='/add-vehicle' element={<AddVehicle/>}/>
+      </Routes>
+      <Routes>
+        <Route path='/add-scenario' element={<AddScenario/>}/>
+      </Routes>
+      <Routes>
+        <Route path='/all-scenario' element={<AllScenario/>}/>
+      </Routes>
+      </div>
+      </div>
+    </Router>
+  )
 }
 
-export default App;
+export default App

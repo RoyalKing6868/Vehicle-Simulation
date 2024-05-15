@@ -1,0 +1,24 @@
+.sideBar{
+    height: 100vh;
+    display: inline-block;
+    background-color: rgb(233, 233, 233);
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.navigation{
+    text-decoration: none;
+    padding:1rem 1rem 1rem 1rem;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 2px;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    
+}
+.navigation:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
