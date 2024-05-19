@@ -1,0 +1,50 @@
+p{
+    font-size: small;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+input{
+    margin: 0;
+    padding: .4rem;
+    width: 20rem;
+    outline: none;
+    border : none;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    padding-left:1rem;
+    
+}
+.scenario{
+    background-color: rgba(11, 181, 187, 0.638);
+    width: 100%;
+    margin: 2rem 2rem 0 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: .5rem;
+    font-weight: 400;
+    line-height:1rem;
+    
+}
+.operations{
+    margin-left: 2rem;
+}
+.btn{
+    padding: .3rem .8rem;
+    margin-right:1rem;
+    font-weight: 600;
+    color: white; 
+    outline:none;
+    border: none;
+    border-radius: .2rem;
+}
+#add{
+    background-color: rgb(147, 205, 60);
+}
+#reset{
+    background-color: rgb(255, 115, 0);
+}
+#back{
+    background-color: rgb(197, 136, 255);
+}
